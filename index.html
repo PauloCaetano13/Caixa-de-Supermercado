@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Caixa de Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supermercado "Pauligor"</h1>
+        <div id="cliente">
+            <h2>Dados do Cliente</h2>
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="input-group">
+                <label for="contato">Contato:</label>
+                <input type="text" id="contato">
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf">
+            </div>
+        </div>
+        <div id="produtos">
+            <h2>Produtos</h2>
+            <div id="lista-produtos">
+                <!-- ADICIONAR OS PRODUTOS DIRETO NO JS -->
+            </div>
+        </div>
+        <div id="pagamento">
+            <h2>Forma de Pagamento</h2>
+            <select id="forma-pagamento">
+                <option value="Débito">Débito</option>
+                <option value="Crédito">Crédito</option>
+                <option value="Pix">PIX</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+        </div>
+        <button onclick="gerarNotaFiscal()">Gerar Nota Fiscal</button>
+        <div id="nota-fiscal">
+            <!-- NOTA FISCAL FAZER NO JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
